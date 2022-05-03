@@ -10,7 +10,7 @@ from pyspark.sql.types import (
 from pyspark.sql.functions import col, split, udf
 import hashlib
 
-VCF_FILE = "file:///home/richard/tmp/vcfread/HG002_CHD7_AD.vcf.gz"
+VCF_FILE = "HG002_CHD7_AD.vcf.gz"
 
 spark = (
     SparkSession.builder.config("spark.sql.catalogImplementation", "hive")
